@@ -1,0 +1,565 @@
+/* AIHabitTracker.css */
+.hero-background-video {
+    position: absolute;
+  }
+  .careers-hero {
+    height: 100vh;
+    overflow: hidden; /* ✅ Hides video overflow inside this one section */
+  }
+  html, body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto; /* ✅ allows natural vertical scroll */
+  }
+    
+.ai-section {
+    background-color: #0e0e0e;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .ai-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+  }
+  
+  .ai-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .ai-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .ai-header a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .ai-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .ai-card {
+    background-color: #111;
+    border-radius: 24px;
+    width: 300px;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ai-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 0 1px #222;
+  }
+  
+  .ai-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ai-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .plus-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: transparent;
+    border: 1px solid #444;
+    color: #aaa;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .plus-btn:hover {
+    background-color: #333;
+    color: white;
+    border-color: white;
+  }
+  
+  /* Background video styles */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.4); /* darken video for readability */
+  }
+  
+  /* Ensure content is above the video */
+  .lifeos-container {
+    position: relative;
+    height: 7400px; /* Editable */
+    background-color: black;
+  }
+
+  .intro-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+    background-color: #0b0b12; /* fallback */
+  }
+  
+  .hero-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(0.5) blur(1.5px);
+  }
+  
+  /* Optional dark overlay for contrast */
+  .careers-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background: rgba(0, 0, 0, 0.4); /* subtle black tint */
+    z-index: -1;
+  }
+  
+  /* Text styling */
+  .hero-content {
+    z-index: 1;
+    padding: 1rem 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .careers-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #0b0b12 100%);
+    z-index: 0;
+  }
+  
+  .insights-section {
+  padding: 6rem 4rem;
+  background-color: #0d0d12;
+  color: white;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.insights-text-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+.insights-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.insights-description {
+  max-width: 500px;
+  font-size: 1rem;
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.insights-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.insights-image-row img {
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.insights-subsection {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.insights-subsection h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.insights-subsection p {
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Takes full screen */
+    overflow: hidden;
+  }
+  
+  .hero-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black 85%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+  }
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.insights-section {
+    background-color: #000000;
+    color: white;
+    padding: 6rem 4rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .insights-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .insights-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .insights-description {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #bdbdbd;
+  }
+  
+  .insights-images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .insights-images img {
+    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .insights-bottom {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .insights-bottom h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .insights-bottom p {
+    font-size: 1rem;
+    color: #aaa;
+    line-height: 1.6;
+  }
+  .soft-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(252, 252, 252, 0.07));
+    margin: 3rem 0;
+  }
+  .scroll-fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .vision-section {
+    background-color: #000000;
+    color: #fff;
+    padding: 6rem 2rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .vision-container {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .vision-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .vision-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .vision-list li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .vision-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #999;
+    font-size: 1.1rem;
+  }
+  
+  .vision-sublist {
+    list-style: disc;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+  }
+  
+  .vision-sublist li {
+    margin-bottom: 0.8rem;
+    color: #ccc;
+  }
+  
+  .vision-note {
+    font-style: italic;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /* Clarity Section */
+  
+  .clarity-section {
+    background-color: #0b0b0b;
+    color: white;
+    padding: 6rem 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .clarity-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .clarity-container {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .clarity-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .clarity-container h3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .clarity-container p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .clarity-list,
+  .clarity-steps {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .clarity-list li,
+  .clarity-steps li {
+    margin-bottom: 1rem;
+  }
+  
+  .clarity-steps li ul {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  
+  .clarity-steps li ul li {
+    list-style-type: disc;
+    color: #aaa;
+  }
+  .identity-section {
+    background-color: #0b0b0b;
+    color: white;
+    padding: 6rem 2rem;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .identity-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .identity-container {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .identity-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .identity-container h3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .identity-container p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .identity-list,
+  .identity-steps {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .identity-steps li ul {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  
+  .identity-list li,
+  .identity-steps li {
+    margin-bottom: 1rem;
+  }
+  
+  blockquote {
+    font-style: italic;
+    color: #999;
+    border-left: 3px solid #555;
+    padding-left: 1rem;
+    margin: 2rem 0;
+  }
+  .centered-image {
+    display: block;
+    margin: 0 auto;
+    width: 60%; /* adjust as needed */
+    height: auto;
+  }
+  

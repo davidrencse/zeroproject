@@ -1,0 +1,91 @@
+/* AIHabitTracker.css */
+.ai-section {
+    min-height: 100vh;
+  }
+  
+  
+  .ai-header {
+    max-width: 800px;
+  }
+  
+  .ai-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  
+  .ai-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .ai-header a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .ai-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .ai-card {
+    background-color: black;
+    border-radius: 24px;
+    width: 300px;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ai-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 0 1px #222;
+  }
+  
+  
+  .ai-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .ai-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .ai-section .ai-card {
+    background-color: black;
+  }
+  
+  .plus-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background: transparent;
+    border: 1px solid #444;
+    color: #aaa;
+    width: 48px; /* 👈 Adjust width to make it an oval shape */
+    height: 32px;
+    font-size: 1.2rem;
+    border-radius: 20px; /* 👈 Oval style */
+    cursor: pointer;
+    display: flex;              /* ✅ Enable flexbox */
+    align-items: center;        /* ✅ Center vertically */
+    justify-content: center;    /* ✅ Center horizontally */
+    transition: all 0.2s ease;
+    padding: 0;
+  }
+  
+  .plus-btn:hover {
+    background-color: #333;
+    color: white;
+    border-color: white;
+  }
+  

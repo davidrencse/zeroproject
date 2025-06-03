@@ -1,0 +1,116 @@
+/* Careers.css */
+.careers-page {
+    background-color: #0e0e0e;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 0 2rem 4rem;
+  }
+  
+  .careers-hero {
+    text-align: center;
+    padding: 12rem 2rem;
+    border-bottom: 1px solid #1f1f1f;
+  }
+  
+  .hero-icon {
+    width: 120px;
+    margin-bottom: 2rem;
+  }
+  
+  .careers-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .careers-hero p {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+  }
+  
+  .open-roles-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+  }
+  
+  .open-roles-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .roles-section {
+    max-width: 900px;
+    margin: 4rem auto 0;
+  }
+  
+  .roles-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 0.5rem;
+  }
+  
+  .job-group {
+    margin-bottom: 3rem;
+  }
+  
+  .job-group h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1f1f1f;
+    padding-bottom: 0.3rem;
+  }
+  
+  .job-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 200px auto; /* role | location | apply */
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px dashed #222;
+    font-size: 1rem;
+}
+
+.job-title {
+    font-weight: 500;
+}
+
+.job-location {
+    color: #aaa;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    justify-self: start;
+}
+
+.apply-link {
+    color: #6e8eff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    justify-self: end;
+}
+
+.apply-link:hover {
+    color: #a6b7ff;
+}
