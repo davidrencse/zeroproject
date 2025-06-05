@@ -34,8 +34,6 @@ This is done through 3 steps: vision, clarity, and identity. Don’t dream about
 
 ## Personal Intelligence System
 
-![image.png](attachment:b1e00c3d-4bcd-41a4-a3ac-27f2ce32165b:image.png)
-
 The **Personal Intelligence System** is your on-demand decision-making engine, powered by everything you've ever journaled, planned, and learned inside Zρ.
 
 Whenever you encounter a situation—whether it’s a life decision, personal challenge, or just needing clarity—you can input it into PIS. The system will:
