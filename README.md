@@ -1,6 +1,7 @@
 Zρ (zero) is An AI-powered Cognitive Assistant app designed to transform lives and accelerate self-improvement. 
 
 The app allows users to input all their ideas in a single space, where AI organizes and categorizes them automatically. It also functions as a journal with intelligent prompts, creating a positive feedback loop, and serves as a personal development hub by offering curated resources and videos across areas like business, self-improvement, fitness, and skill-building. Zρ helps users stay organized, learn efficiently, and grow across all aspects of life.
+
 ---
 # Features
 
