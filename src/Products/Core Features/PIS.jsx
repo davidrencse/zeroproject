@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './PIS.css';
-import pisImage1 from '/src/assets/images/PIS.png';
+import pisImage1 from '/src/assets/images/pis.png';
 import pisImage2 from '/src/assets/images/pis 2.png';
 
 const PersonalIntelligenceSystem = () => {
